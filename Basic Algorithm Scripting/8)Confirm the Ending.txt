@@ -1,0 +1,22 @@
+
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var lenOfTarget = target.length;
+  var substring = str.substring(str.length-lenOfTarget, str.length);
+  
+  if(substring == target)
+  {
+  console.log(true);
+  return true;
+  }
+  
+  
+  console.log(false);
+  return false;
+  
+  
+ 
+}
+
+confirmEnding("Bastian", "n");

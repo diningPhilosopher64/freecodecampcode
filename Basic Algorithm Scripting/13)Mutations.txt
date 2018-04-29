@@ -1,0 +1,20 @@
+
+function mutation(arr)
+{
+
+   var secondArray = arr[1].toLowerCase();
+  var firstStr = arr[0].toLowerCase();
+
+  for(var i = 0; i< secondArray.length; i++)
+  {
+  	if( firstStr.indexOf(secondArray[i]) > -1 )  	continue;
+    
+     else    return false;
+    
+    
+  }
+
+  return true;
+}
+
+mutation(["hello", "hey"]);

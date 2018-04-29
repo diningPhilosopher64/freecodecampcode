@@ -1,0 +1,34 @@
+
+function chunkArrayInGroups(arr, size)
+{
+  // Break it up.
+  var twoDArray =[];
+  var rows = arr.length/size;
+  
+  for(var i=0; i<rows; i++) twoDArray[i] = [];
+  
+  for(var i =0;i< rows; i++)
+  {
+  
+  	var temp = [];
+  	 for(var j =0;j<size;j+=size)
+     {
+     	temp = arr.slice(0,size); console.log("temp  ",temp);
+      arr= arr.slice(size,arr.length); console.log("arr ",arr);
+      twoDArray[i] = temp;
+     }
+     
+     
+     
+     
+     
+     console.log(twoDArray);
+     
+  }
+  
+
+
+  return twoDArray;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);

@@ -1,0 +1,30 @@
+
+function truncateString(str, num) 
+{
+  // Clear out that junk in your trunk
+  if(num <=3)
+  {
+    str = str.slice(0,num);
+  //  console.log("gg",str);
+   str = str + "...";
+  // console.log(str);
+   return str;
+  }
+  
+  if(str.length <= num) return str;
+  
+  else
+  {
+  	str = str.slice(0,num);
+    str = str.slice(0,str.length-3);
+    str = str + "...";
+ //   console.log(str);
+  
+  }
+  
+  
+  return str;
+}
+
+var st = truncateString("Absolutely Longer", 2);
+console.log(st);

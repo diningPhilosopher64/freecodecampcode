@@ -1,0 +1,15 @@
+
+function bouncer(arr) 
+{
+  // Don't show a false ID to this bouncer.
+  arr = arr.filter(word => word == word )
+  
+  arr = arr.filter(word => word!= undefined && word!= false && word != null && word != 0 )
+  
+  console.log(arr);
+  
+  
+  return arr;
+}
+
+bouncer([7, "ate", NaN, false, 9,undefined]);

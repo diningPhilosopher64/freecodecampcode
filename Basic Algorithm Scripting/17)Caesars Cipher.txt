@@ -1,0 +1,38 @@
+
+function rot13(str)
+{ // LBH QVQ VG!
+ 
+ 
+ var temp = "";
+ for(var i =0; i < str.length; i++)
+ {
+ 
+ 		var int = str.charCodeAt(i);
+ 		if( int>= 65 && int <= 90 )
+    
+    {
+ 			 if(int - 13 < 65) int += 13;
+       
+       else int -= 13;
+    
+    		temp += String.fromCharCode(int);
+    
+    }
+    
+    
+    else temp += String.fromCharCode(int);
+  
+    
+    
+ 
+ 
+ }
+  
+  
+  
+  
+  return temp;
+}
+
+
+rot13("SERR PBQR PNZC");
