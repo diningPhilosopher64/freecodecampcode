@@ -1,0 +1,16 @@
+
+function diffArray(arr1, arr2) 
+{
+  var newArr1 = [];
+  var newArr2 = [];
+  // Same, same; but different.
+  
+  newArr2 = arr2.filter(word => arr1.indexOf(word) == -1);
+  newArr1 = arr1.filter(word => arr2.indexOf(word) == -1);
+  
+  return newArr2.concat(newArr1);
+  
+
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);

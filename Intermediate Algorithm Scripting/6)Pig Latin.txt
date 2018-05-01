@@ -1,0 +1,28 @@
+
+function translatePigLatin(str) {
+    
+    var vowels = ['a','e','i','o','u'];
+    var count = 1;
+    
+    
+    if(vowels.includes(str[0])) return str.concat("way");
+    
+   for(var i =1;i< str.length;i++)
+       {
+           if(str[i].includes('a') || str[i].includes('e') || str[i].includes('i') || str[i].includes('o') || str[i].includes('u'))
+             break;           
+           
+             else   count+=1;
+               
+           
+           
+       }
+       str = str.substr(count) + str.substr(0,count) + "ay";
+    
+
+
+    
+  return str;
+}
+
+translatePigLatin("glove");

@@ -1,0 +1,24 @@
+
+function fearNotLetter(str)
+{
+    var firstLetter = str.charCodeAt(0);
+    var secondLetter = str.charCodeAt(str.length - 1);
+    
+    console.log(" first letter ");
+    var flag = 0;    
+    for(var i = 0 ;i < str.length ; i++)
+        {
+              if( str.charCodeAt(i) == firstLetter + i )  continue;              
+              else   return String.fromCharCode(firstLetter+i);
+            
+        }
+    
+    
+    
+  return undefined;
+}
+
+fearNotLetter("abce");
+
+
+

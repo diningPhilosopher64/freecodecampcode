@@ -1,0 +1,27 @@
+
+function sumAll(arr) {
+
+	var maxNumber = arr.reduce( (a,b) => {
+  	
+    return Math.max(a,b);
+  
+  });
+  var minNumber = arr.reduce( (a,b) => {
+  	
+    return Math.min(a,b);
+  
+  });
+  
+
+  let sum=0;
+  	for(let i = minNumber ; i <=maxNumber ; i++)
+    {
+    	sum += i;
+    
+    }
+
+  
+  return sum;
+}
+
+sumAll([1, 4]);

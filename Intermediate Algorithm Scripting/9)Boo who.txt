@@ -1,0 +1,11 @@
+
+function booWho(bool) 
+{
+  console.log(bool);
+  // What is the new fad diet for ghost developers? The Boolean.
+  if(typeof(bool) === true || typeof(bool) === false  || bool === true || bool === false) return true;
+  
+  return false;
+}
+
+booWho(null);

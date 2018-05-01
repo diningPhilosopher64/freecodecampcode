@@ -1,0 +1,30 @@
+
+function pairElement(str) 
+{
+    var basePair = {
+        A:"T",
+        T:"A",
+        G:"C",
+        C:"G"
+        
+        
+    };
+    
+    
+    
+    var twoD = [];
+    var oneD ;
+    console.log("hello world");
+    
+    for(var i = 0; i < str.length;i++)
+        {
+            oneD = [];
+            oneD.push(str[i]);
+            oneD.push(basePair[str[i]]);       
+            twoD.push(oneD);  
+        }
+    
+    
+  return twoD;
+}
+pairElement("GCG");
