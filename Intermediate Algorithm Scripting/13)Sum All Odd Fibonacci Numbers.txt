@@ -1,0 +1,23 @@
+function sumFibs(num) {
+    var firstNumber = 1;
+    var secondNumber = 1;
+    var sum = 0;
+
+    var arr = [];
+    arr.push(firstNumber);
+    arr.push(secondNumber);
+
+    while(sum <= num) {
+        sum = firstNumber + secondNumber;
+        firstNumber = secondNumber;
+        secondNumber = sum;
+        if (sum % 2 == 1  && sum <= num)
+            arr.push(sum);
+
+    }
+ 
+
+    return  arr.reduce((accumulator, currentValue) => { return accumulator + currentValue; })
+}
+
+sumFibs(75025);

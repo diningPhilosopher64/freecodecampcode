@@ -1,0 +1,28 @@
+function sumPrimes(num) {
+
+    var isPrime;
+    var primes = [ 2, 3];
+
+    for (var j = 4; j <= num; j++) {
+
+        isPrime = true;
+        for (var i = 2; i <= Math.ceil(Math.sqrt(j)); i++) {
+
+            
+            if (j % i == 0) 
+            {
+            
+            isPrime = false;break;
+            }
+
+        }
+
+        if (isPrime == true)  primes.push(j);
+    }
+
+   
+  return(primes.reduce((accumulator, currentValue) => {  return accumulator + currentValue; }));
+  
+}
+
+sumPrimes(977);
